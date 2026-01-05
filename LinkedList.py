@@ -42,10 +42,33 @@ class LinkedList:
             yield current.value
             current = current.next
             
+    def size(self):
+        count = 0
+        current = self.head
+        while current:
+            count += 1
+            current = current.next
+        return count
+    
+    def reverse(self):
+        previous = None
+        current = self.head
+        while current:
+            next_node = current.next
+            previous = current
+            current.next = previous
+            current = next_node
+        self.head = previous
+        
+        
+        
 ll = LinkedList()
 ll.append(1)
 ll.append(2)
 ll.append(3)
 ll.append(4)
-ll.prepend(0)
-ll.delete(2)
+for value in ll:
+    print(value)  # Output should be 1, 2, 3, 4
+ll.reverse()
+for value in ll:
+    print(value)  # Output should be 4, 3, 2, 1
