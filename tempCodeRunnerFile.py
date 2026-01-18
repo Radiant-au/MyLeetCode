@@ -1,5 +1,4 @@
-from typing import List
-class Solution:
+
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         count = 0
         for i in range(0 , len(flowerbed) , 2):
@@ -13,5 +12,3 @@ class Solution:
 solution = Solution()
 flowerbed = [0,0,1,0,0]
 n = 2
-k = solution.canPlaceFlowers(flowerbed , n)
-print(k)
