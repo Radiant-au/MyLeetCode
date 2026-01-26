@@ -9,7 +9,7 @@ class Solution:
             char = chars[read]
             count = 0
              
-            while chars[read]  == char and read < n:
+            while read < n and chars[read]  == char:
                  read += 1
                  count += 1
                  
