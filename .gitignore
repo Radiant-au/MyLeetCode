@@ -1,0 +1,5 @@
+# Ignore temporary Code Runner files
+# Matches files named `tempCodeRunnerFile` in any directory
+tempCodeRunnerFile
+# Also ignore variants with suffixes
+tempCodeRunnerFile*
